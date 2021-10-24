@@ -1,0 +1,19 @@
+<div class="album py-2">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col" *ngFor="let data of categoryData">
+        <button class="card shadow-sm align-items-center" *ngIf="data">
+          <img
+            src="${{ data.img }}"
+            href="#"
+            class="card-img-top p-5"
+            alt="animal image"
+          />
+          <div class="card-body">
+            <h1 class="card-title text-center">{{ data.type }}</h1>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
